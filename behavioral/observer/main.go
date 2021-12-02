@@ -66,5 +66,8 @@ func NewLogger(loggers ...Logger) *logger {
 func main() {
 	var l = NewLogger(NewConsoleLogger(), NewDBLogger())
 	l.AddLoger(NewRedisLogger())
-	l.Log("123")
+	l.Log("test")
+	//ConsoleLogger Log : test
+	//DBLogger Log : test
+	//RedisLogger Log : test
 }
